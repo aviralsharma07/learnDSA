@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Recursion {
 
-    // Function to Print a Name N times using Recursion.
+    // Function to Print numbers from 1 to N using Recursion.
     static void printOnetoN(int i, int n){
         // Base Condition
         if (i>n) return;
