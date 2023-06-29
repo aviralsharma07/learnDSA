@@ -4,6 +4,7 @@ public class MergeSort {
 
     // Merge Sort: Divide and Merge
     // Time Complexity: O(N*LOG2(n))
+    // Space Complexity: O(N)
 
     static void mergeArray(int[] arr, int low, int mid, int high){
 
