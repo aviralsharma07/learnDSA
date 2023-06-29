@@ -8,32 +8,51 @@ public class QuickSort {
     // Space Complexity: O(1)
 
 
-    static int placePivot(int[] arr, int low, int high) {
+//    static int partition(int[] arr, int low, int high){
+          // This Function uses High as Pivot
+//        int pivot = arr[high];
+//        int i = low - 1;
+//        for (int j=low; j<high; j++){
+//            if (arr[j] < pivot){
+//                i++;
+//                int temp = arr[i];
+//                arr[i] = arr[j];
+//                arr[j] = temp;
+//            }
+//        }
+//        i++;
+//        int temp = arr[i];
+//        arr[i] = pivot;
+//        arr[high] = temp;
+//        return i;
+//    }
+
+
+    static int partition(int[] arr, int low, int high){
+        // This Function uses Low as Pivot
         int pivot = arr[low];
-        int i = low, j = high;
-        while (i<j) {
-            while (arr[i] <= pivot && i <= high-1) {
-                ++i;
-            }
-            while (arr[j] > pivot && j >= low+1) {
-                --j;
-            }
-            if (i < j) {
+        int i = high + 1;
+        for (int j=high; j>0; j--){
+            if (arr[j] > pivot){
+                i--;
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
-        arr[low] = arr[j];
-        arr[j] = pivot;
-        return j;
+        i--;
+        int temp = arr[i];
+        arr[i] = pivot;
+        arr[low] = temp;
+        return i;
     }
 
+    
     static void quickSort(int[] arr, int low, int high){
         if (low < high){
-            int partitionIndex = placePivot(arr,low,high);
-            quickSort(arr,low,partitionIndex-1);
-            quickSort(arr,partitionIndex+1,high);
+            int pivot = partition(arr,low,high);
+            quickSort(arr,low,pivot-1);
+            quickSort(arr,pivot+1,high);
         }
     }
 
