@@ -2,31 +2,35 @@ import java.util.Arrays;
 
 public class QuickSort {
 
-    // Quick Sort(Divide and Conquer Algorithm): 1. Pick a Pivot and Put it in its right place in the sorted array.
-    //                                           2. Smaller on the left, Larger on the right.
-    // Time Complexity: O(N*Log(N))
-    // Space Complexity: O(1)
+/*    
+------------------------------------------------------------------------------------------------------=---------------------    
+Quick Sort(Divide and Conquer Algorithm): 1. Pick a Pivot and Put it in its right place in the sorted array.
+                                          2. Smaller on the left, Larger on the right.
+Time Complexity: O(N*Log(N))
+Space Complexity: O(1)
+----------------------------------------------------------------------------------------------------------------------------
+*/    
 
-
-//    static int partition(int[] arr, int low, int high){
-          // This Function uses High as Pivot
-//        int pivot = arr[high];
-//        int i = low - 1;
-//        for (int j=low; j<high; j++){
-//            if (arr[j] < pivot){
-//                i++;
-//                int temp = arr[i];
-//                arr[i] = arr[j];
-//                arr[j] = temp;
-//            }
-//        }
-//        i++;
-//        int temp = arr[i];
-//        arr[i] = pivot;
-//        arr[high] = temp;
-//        return i;
-//    }
-
+/*    
+   static int partition(int[] arr, int low, int high){
+          This Function uses High as Pivot
+       int pivot = arr[high];
+       int i = low - 1;
+       for (int j=low; j<high; j++){
+           if (arr[j] < pivot){
+               i++;
+               int temp = arr[i];
+               arr[i] = arr[j];
+               arr[j] = temp;
+           }
+       }
+       i++;
+       int temp = arr[i];
+       arr[i] = pivot;
+       arr[high] = temp;
+       return i;
+   }
+*/
 
     static int partition(int[] arr, int low, int high){
         // This Function uses Low as Pivot
