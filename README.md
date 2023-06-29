@@ -14,7 +14,7 @@ This repository documents my progress as I learn various DSA topics step by step
 
 ## Introduction
 
-In this repository, I share my journey of learning DSA. The focus is on understanding the fundamental concepts, implementing algorithms, and solving coding questions. By following along, you can gain insights into different data structures, algorithms, and their applications.
+In this repository, I share my journey of learning DSA. The focus is on understanding the fundamental concepts, implementing algorithms, and solving coding questions. I am following Striver's A2Z DSA Sheet to prepare Data Structures and Algorithms and also following Kunal Kushwaha's course to prepare DSA in Java. By following along, you can gain insights into different data structures, algorithms, and their applications.
 
 ## Topics Covered
 
