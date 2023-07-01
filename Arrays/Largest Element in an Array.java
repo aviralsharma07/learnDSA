@@ -1,6 +1,23 @@
 public class LargestElementInArray {
 
     // Question Link: https://practice.geeksforgeeks.org/problems/largest-element-in-array4009/1
+
+
+    /*
+    
+    Brute Force Solution: - Sort the Array
+                          - return the element at last index
+                          - Time Complexity: O(N * logN)
+                          - Space Complexity: O(n)
+
+    Optimal Solution: - Initialize Variable largest
+                      - Iterate from i to n-1
+                      - if (arr[i] > largest ) -> largest = arr[i]
+                      - return largest
+                      - Time Complexity: O(N), Single Pass
+                      - Space Complexity: O(1)
+    */
+    
   
     static int largestNumber(int[] arr, int n) {
         int largestNum = arr[0];
