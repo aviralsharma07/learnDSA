@@ -7,6 +7,7 @@ public class FindUnion {
 
     /*
         Question Link: https://practice.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
+        
         Brute Force Solution: - Create a Hash Array and Save the frequencies of all the elements in arr1 and arr2
                               - Iterate Hash Array and add all the indexes to the List with hash[index]>0
                               - return the List.
