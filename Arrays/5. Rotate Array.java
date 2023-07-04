@@ -5,6 +5,8 @@ public class LeftRotateAnArray {
 
 
     /*
+        Question Link: https://leetcode.com/problems/rotate-array/
+        
         Brute Force Solution: - Run an Outer Loop K Times, where each iteration rotates array by one element.
                               - Run an Inner Loop Which shifts every array element by one index for every K rotation.
                               -    for (int i=0; i<k; i++){
