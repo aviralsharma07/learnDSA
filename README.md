@@ -34,5 +34,5 @@ Each topic will have its dedicated folder containing relevant notes, code exampl
 
 ## Folder Structure
 
-The repository's folder structure is organized by topics for easy navigation. Here's a brief overview:
+The repository's folder structure is organized by topics for easy navigation. Here's a brief overview.
 
