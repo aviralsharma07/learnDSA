@@ -10,8 +10,26 @@
 
 - " == " Comparator: It returns TRUE if two variables are referring to the same Object.
 - equals() method: It returns TRUE if two variables have the same value.
+
+### Pretty Printing
+
 ```java
 System.out.printf("Value of Pi is %.3f", Math.PI);
 // Printf truncates and prints float var to specific decimal pts.
 // out is an instance of PrintStream Class. Println and Printf are its functions. 
 ```
+| Format Specifier | Description                               |
+|------------------|-------------------------------------------|
+| `%c`             | Character                                 |
+| `%d`             | Decimal (integer) number (base 10)        |
+| `%e`             | Exponential floating-point number         |
+| `%f`             | Floating-point number                     |
+| `%i`             | Integer (base 10)                         |
+| `%o`             | Octal number (base 8)                     |
+| `%s`             | String                                    |
+| `%u`             | Unsigned decimal (integer) number          |
+| `%x`             | Number in hexadecimal (base 16)           |
+| `%t`             | Formats date/time                         |
+| `%%`             | Print a percent sign                      |
+| `\%`             | Print a percent sign                      |
+
