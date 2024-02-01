@@ -11,7 +11,7 @@
 - " == " Comparator: It returns TRUE if two variables are referring to the same Object.
 - equals() method: It returns TRUE if two variables have the same value.
 
-### Pretty Printing
+## Pretty Printing
 
 ```java
 System.out.printf("Value of Pi is %.3f", Math.PI);
@@ -33,3 +33,13 @@ System.out.printf("Value of Pi is %.3f", Math.PI);
 | `%%`             | Print a percent sign                      |
 | `\%`             | Print a percent sign                      |
 
+## String Concatenation
+
+- 'a' + 'b' = 195
+- "a" + "b" = ab
+- 'a' + 3 = 97
+- (char)('a' + 3) = d
+- "a" + 1 = a1 [int will be converted to Integer, which will call toString then. So it is the same as doing "a" + "1"]
+- THIS "toString()" CONVERSION OF OBJECT WILL ONLY HAPPEN WHEN AT LEAST ONE THING IN THE ADDITION IS A STRING.
+
+`Example: ans = new Integer(56) + "" + new Arraylist<>()];`
