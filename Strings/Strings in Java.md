@@ -43,3 +43,27 @@ System.out.printf("Value of Pi is %.3f", Math.PI);
 - THIS "toString()" CONVERSION OF OBJECT WILL ONLY HAPPEN WHEN AT LEAST ONE THING IN THE ADDITION IS A STRING.
 
 `Example: ans = new Integer(56) + "" + new Arraylist<>()];`
+
+## String Performance
+
+```
+String series = "";
+for (int i=0; i<26; i++){
+     char ch = (char)('a' + i);
+     series += ch;
+}
+System.out.println(series);
+```
+- Here, in each Iteration new String Object is created: a, ab, abc, abcd --- a->z.
+- This is a waste of Space. So we use String Builder to manipulate same object. 
+
+```
+StringBuilder builder = new StringBuilder();
+for (int i=0; i<26; i++){
+    char ch = (char)('a' + i);
+    builder.append(ch);
+}
+System.out.println(builder);
+String newstr = builder.toString();
+System.out.println(newstr);
+```
