@@ -67,3 +67,23 @@ System.out.println(builder);
 String newstr = builder.toString();
 System.out.println(newstr);
 ```
+## String Methods
+
+| Method                           | Description                                      | Example                                              | Explanation                                                         |
+|----------------------------------|--------------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------|
+| `length()`                       | Returns the length of the string.                | `"Hello".length()`                                   | Returns `5` as the string "Hello" has five characters.              |
+| `charAt(int index)`               | Returns the character at the specified index.   | `"Java".charAt(1)`                                   | Returns `'a'` at index `1`.                                        |
+| `concat(String str)`             | Concatenates the specified string to the end.   | `"Hello".concat(" World")`                          | Returns a new string "Hello World".                               |
+| `toUpperCase()`                  | Converts the string to uppercase.               | `"java".toUpperCase()`                              | Returns "JAVA".                                                    |
+| `toLowerCase()`                  | Converts the string to lowercase.               | `"Java".toLowerCase()`                              | Returns "java".                                                    |
+| `equals(Object obj)`              | Compares the content of two strings.            | `"hello".equals("world")`                           | Returns `false` as the content is not the same.                    |
+| `equalsIgnoreCase(String str)`   | Case-insensitive comparison of two strings.     | `"Java".equalsIgnoreCase("java")`                   | Returns `true` as the content is the same, ignoring case.          |
+| `indexOf(String str)`             | Returns the index of the first occurrence.      | `"Hello".indexOf("l")`                              | Returns `2` as the first occurrence of "l" is at index `2`.         |
+| `substring(int beginIndex)`      | Returns a substring starting from the index.    | `"Hello".substring(2)`                              | Returns "llo" starting from index `2`.                             |
+| `replace(char oldChar, char newChar)` | Replaces occurrences of a character.       | `"Hello".replace('l', 'w')`                        | Returns "Hewwo" by replacing all occurrences of 'l' with 'w'.      |
+| `startsWith(String prefix)`      | Checks if the string starts with a prefix.     | `"Java".startsWith("Ja")`                          | Returns `true` as "Java" starts with "Ja".                         |
+| `endsWith(String suffix)`        | Checks if the string ends with a suffix.       | `"Java".endsWith("va")`                            | Returns `true` as "Java" ends with "va".                           |
+| `trim()`                         | Removes leading and trailing whitespaces.      | `"  Hello  ".trim()`                                | Returns "Hello" by removing leading and trailing whitespaces.     |
+| `split(String regex)`            | Splits the string into an array using regex.   | `"Java is fun".split("\\s")`                        | Returns `["Java", "is", "fun"]` by splitting on whitespaces.      |
+| `substring(int beginIndex, int endIndex)` | Returns a substring in the specified range. | `"Hello".substring(1, 4)`                          | Returns "ell" from index `1` to `3` (exclusive).                   |
+| `isEmpty()`                      | Checks if the string is empty.                 | `"".isEmpty()`                                     | Returns `true` as the string is empty.                            |
